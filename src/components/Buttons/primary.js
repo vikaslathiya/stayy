@@ -1,9 +1,12 @@
 import React from "react";
 
-const ButtonPrimary = ({ label }) => {
+const ButtonPrimary = ({ label, disabled, icon }) => {
+    const buttonClasses = `h-12 rounded-3xl bg-gradient text-white shadow-lg font-semibold text-base disabled:shadow-none disabled:bg-none disabled:bg-light-gray ${!label && icon ? "p-3" : icon ? "w-auto flex justify-center items-center gap-3 px-6 py-3" : "w-44 px-6 py-3"}`;
+
     return (
-        <button className="w-44 h-12 px-6 py-3 rounded-3xl bg-gradient-to-br from-purple-500 via-purple-600 to-blue-600 text-white shadow-lg font-semibold text-base">
+        <button disabled={disabled} className={buttonClasses}>
             {label}
+            {icon && <span>{icon}</span>}
         </button>
     );
 };
