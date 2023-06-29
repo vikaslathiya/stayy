@@ -39,3 +39,16 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+input[type=checkbox]:disabled::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 8px;
+  top: 8px;
+  background-color: white;
+  border: 2px solid #DBE4EC;
+  border-radius: 2px;
+}

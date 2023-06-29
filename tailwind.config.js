@@ -30,8 +30,12 @@ module.exports = {
             },
             width: {
                 1440: '1440px',
+                1380: '1380px',
                 100: '100px',
-                280: '280px'
+                280: '280px',
+                200: '200px',
+                228: '228px',
+                86: '86%'
             },
             fontSize: {
                 h1: '56px',
@@ -44,5 +48,5 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: []
 };

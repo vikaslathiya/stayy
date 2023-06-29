@@ -27,31 +27,31 @@ const CustomLink = ({ title, path }) => (
 
 const Footer = () => {
     return (
-        <div className='flex pb-6  flex-col items-center gap-20'>
-            <div className='flex px-6 pt-20 justify-between items-center w-1440 border-t border-light-gray '>
+        <footer className='flex pb-6  flex-col items-center gap-10 sm:gap-20'>
+            <div className='flex px-6 pt-10 sm:pt-20 justify-between items-center w-86 flex-col sm:flex-row gap-6 border-t border-light-gray '>
                 <div className='flex flex-col gap-6 items-start'>
                     <div className='flex flex-col gap-3 items-start'>
-                        <div className="h-6 w-100">
+                        <div className="h-6 w-100 m-auto sm:m-0">
                             <Image alt="nature" src={stayy_logo} width={100} height={100} />
                         </div>
                         <p className='text-dark-gray text-lg'>Your private accommodations network.</p>
                     </div>
-                    <div className='flex py-3 items-start gap-6'>
+                    <div className='flex py-3 items-start gap-6 m-auto sm:m-0'>
                         {linkedin}
                         {facebook}
                     </div>
                 </div>
 
 
-                <div className='flex items-start gap-6'>
-                    <div>
+                <div className='flex items-start gap-3 sm:gap-6 flex-col sm:flex-row'>
+                    <div className='m-auto sm:m-0'>
                         <div className='flex flex-col gap-3'>
                             <CustomLink title='Stayy' path='/' />
                             <CustomLink title='About' path='/' />
                             <CustomLink title='Blog' path='/' />
                         </div>
                     </div>
-                    <div>
+                    <div className='m-auto sm:m-0'>
                         <div className='flex flex-col gap-3'>
                             <CustomLink title='Terms of use' path='/' />
                             <CustomLink title='Privacy policy' path='/' />
@@ -63,7 +63,7 @@ const Footer = () => {
             <div className='flex py-3 justify-center items-center self-stretch'>
                 <p className='text-medium-gray text-lg'>© 2023 STAYY LLC. All rights reserved.</p>
             </div>
-        </div>
+        </footer>
     )
 }
 
