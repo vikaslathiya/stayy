@@ -155,7 +155,7 @@ const Content = () => {
                     {contentIconBox}
 
                     <div className='flex items-start gap-6 flex-wrap' >
-                        {multipleIcons.map((item, i) => <div key={i} className='flex items-center justify-center'>{item}</div>)}
+                        {multipleIcons.map((item, i) => <div key={i} className='m-0 lg:flex lg:items-center lg:justify-center lg:m-auto'>{item}</div>)}
                     </div>
                 </div>
 
